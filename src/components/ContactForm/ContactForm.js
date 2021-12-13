@@ -1,6 +1,7 @@
 import { Component } from "react/cjs/react.production.min";
 import s from "./Contact.form.module.css";
 import shortid from "shortid";
+import PropTypes from "prop-types";
 
 export default class ContactForm extends Component {
   state = {
@@ -70,3 +71,7 @@ export default class ContactForm extends Component {
     );
   }
 }
+
+ContactForm.propTypes = {
+  submit: PropTypes.func,
+};
