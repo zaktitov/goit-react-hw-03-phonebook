@@ -8,13 +8,23 @@
   position: relative;
 }
 
-.label {
+.labelName {
   font-size: 18px;
-  font-weight: 400;
-  font-weight: 500;
+  font-weight: bold;
+
   margin-bottom: 5px;
-  color: grey;
+  color: black;
 }
+
+.labelNumber {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-bottom: 5px;
+  color: black;
+}
+
 .btnSubmit {
   margin: 30px 0 30px 0;
   font-size: 16px;
@@ -25,6 +35,12 @@
   padding: 5px 10px;
   color: white;
   cursor: pointer;
+  transition: transform 250ms ease;
+}
+
+.btnSubmit:hover,
+.btnSubmit:focus {
+  transform: scale(1.1);
 }
 
 .form {
@@ -33,17 +49,9 @@
   justify-content: center;
   align-items: center;
   width: 400px;
-  margin: 20px auto 0 auto;
+  margin: 0px auto 0 auto;
   border: 1px solid rgb(231, 231, 231);
   padding: 50px;
   border-radius: 5px;
   box-shadow: 12px 12px 2px 1px rgba(18, 18, 34, 0.2);
-}
-
-.list {
-  list-style: none;
-}
-
-.contacts {
-  color: grey;
 }
